@@ -51,11 +51,23 @@ setTimeout(testMemoria, 6000);  //DEBUG: set to 40000 (su base 30 secondi)
     for (var i = 0; i < 5; i++) {
       numeriUtente.push(parseInt(prompt('Inserisci i numeri visualizzati')));
     }
-    console.log(numeriUtente);
-  }
+    // console.log(numeriUtente);
 
 
 // STEP #4: Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati
+    // Confronto array randomNums e numeriUtente
+    for (var i = 0; i < randomNums.length; i++) {
+      if(randomNums[i]!=numeriUtente[i]) {
+        console.log('Non hai inserito i numeri corretti');
+      }
+      else {
+        console.log('Bravo! Hai memorizzato tutti i numeri');
+      }
+    }
+    
+  }
+
+
 
 
 
