@@ -43,7 +43,7 @@ function diminuisciSecondi() {
 // STEP #3: Dopo 30 secondi l'utente deve inserire un prompt alla volta i numeri che ha visto precedentemente.
 //      ---> imposto funzione che sarà attivata dopo i 30 secondi del timer
 //      ---> display singoli prompt per inserimento numeri utente
-setTimeout(testMemoria, 6000);  //DEBUG: set to 40000 (su base 30 secondi)
+setTimeout(testMemoria, 6500);  //DEBUG: cambiare su base 30 secondi
 
   function testMemoria() {
     var numeriUtente = [];
@@ -64,7 +64,7 @@ setTimeout(testMemoria, 6000);  //DEBUG: set to 40000 (su base 30 secondi)
         console.log('Bravo! Hai memorizzato tutti i numeri');
       }
     }
-    
+
   }
 
 
