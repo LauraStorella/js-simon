@@ -41,12 +41,21 @@ function diminuisciSecondi() {
 
 
 // STEP #3: Dopo 30 secondi l'utente deve inserire un prompt alla volta i numeri che ha visto precedentemente.
-setTimeout(testMemoria, 6000);
+//      ---> imposto funzione che sarà attivata dopo i 30 secondi del timer
+//      ---> display singoli prompt per inserimento numeri utente
+setTimeout(testMemoria, 6000);  //DEBUG: set to 40000 (su base 30 secondi)
 
   function testMemoria() {
-    var numeriUtente = parseInt(prompt('Test Memoria: Inserisci i numeri che hai visualizzato'));
+    var numeriUtente = [];
+
+    for (var i = 0; i < 5; i++) {
+      numeriUtente.push(parseInt(prompt('Inserisci i numeri visualizzati')));
+    }
+    console.log(numeriUtente);
   }
 
+
+// STEP #4: Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati
 
 
 
